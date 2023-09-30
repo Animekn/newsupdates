@@ -1,0 +1,45 @@
+.page {
+    background-image: url('https://miro.medium.com/v2/resize:fit:1100/format:webp/1*PW8qoQJTIhhrM_0_Hzl5PQ.jpeg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background for a parallax effect */
+    height: 100vh; /* Set the background's height to the viewport height */
+    margin: 0; /* Remove default margin to cover the entire viewport */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+    color: #fff; /* Text color on top of the background */
+  }
+  
+  /* Additional styling for content on top of the background */
+  .layout {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin:0 auto;
+    padding: 139px;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.7
+    ); /* Semi-transparent black background for readability */
+    border-radius:20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a card effect */
+    color: #fff; /* Text color on top of the card */
+  }
+  
+  h1 {
+    font-size: 52px;
+    margin-inline: auto;
+    font-weight: bold;
+    margin-top: 99px;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 26px;
+    line-height:1.5;
+  }
+  

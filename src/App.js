@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Navebar from './component/Navebar.js';
+import News from './component/News.js';
+import Home from './component/Home'
+// import PageNotFound from './component/PageNotFound';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  createBrowserRouter,
+  RouterProvider
+} from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    
+    render() {
+ 
+      return (
+        <>
+        <Navebar />
+     {/* <Home/> */}
+        {/* <News pageSize={10} country='in' category='science' /> */}
+        <Routes>
+        <Route path='/' element={<Home />} />
+          <Route path='/:type' element={<News />} />
+          {/* <Route path="*" element={<PageNotFound />} /> */}
+        </Routes>
+      </>
+    );
+  }
 }
-
 export default App;
